@@ -7,7 +7,7 @@ require "twilio-ruby"
 
 get '/record-message' do
   response = Twilio::TwiML::Response.new do |r|
-    r.Play '/hello_chicago.mp3'
+    r.Play '/polar_express.mp3'
     r.Record :maxLength => '60', :action => '/handle-record', :method => 'get'
   end
   response.text
