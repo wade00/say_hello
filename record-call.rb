@@ -17,7 +17,7 @@ get '/handle-record' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'Here is your message.'
     r.Play params['RecordingUrl']
-    r.Say 'Goodbye.'
+    r.Say 'Happy holidays!'
   end.text
 end
 
